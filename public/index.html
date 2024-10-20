@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Website in Audio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Website Reader</h1>
+    <form id="websiteForm">
+      <label for="url">Enter Website URL:</label>
+      <input type="url" id="url" name="url" required />
+      <button type="submit">Read Website</button>
+    </form>
+
+    <h2>Audio Output</h2>
+    <audio id="audioPlayer" controls></audio>
+
+    <h2>Bookmarks</h2>
+    <ul id="bookmarkList"></ul>
+    <button id="bookmarkBtn" disabled>Bookmark this time</button>
+
+    <script src="frontend.js"></script>
+    <!-- Link to frontend logic -->
+  </body>
+</html>
